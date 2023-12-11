@@ -7,6 +7,7 @@ import com.mingles.metamingle.scenario.command.application.dto.request.SaveScena
 import com.mingles.metamingle.scenario.command.application.dto.response.BGMResponse;
 import com.mingles.metamingle.scenario.command.application.dto.response.BgImageResponse;
 import com.mingles.metamingle.scenario.command.application.service.ScenarioCommandService;
+import com.mingles.metamingle.translate.dto.TranslationResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.codec.ServerSentEvent;
 import org.springframework.stereotype.Service;
@@ -110,6 +111,38 @@ public class AiInfraService {
 
         return quizCommandService.saveQuizWithUUID(uuid, quiz.getKorea(), quiz.getEnglish(), quiz.getIsquiz());
 //        return quizCommandService.saveQuizWithUUID(uuid, "테스트", "test", "yes");
+    }
+
+    public String translateTextToEnglish(String text) {
+
+        Map<String, String> bodyJson = new HashMap<>();
+        bodyJson.put("text", text);
+        bodyJson.put("lang", "KO");
+
+        TranslationResponse response = webClient.post()
+                .uri("/chat_translate/chat")
+                .bodyValue(bodyJson)
+                .retrieve()
+                .bodyToMono(TranslationResponse.class)
+                .block();
+
+        return response.getOutput();
+    }
+
+    public String translateTextToKorean(String text) {
+
+        Map<String, String> bodyJson = new HashMap<>();
+        bodyJson.put("text", text);
+        bodyJson.put("lang", "EN");
+
+        TranslationResponse response = webClient.post()
+                .uri("/chat_translate/chat")
+                .bodyValue(bodyJson)
+                .retrieve()
+                .bodyToMono(TranslationResponse.class)
+                .block();
+
+        return response.getOutput();
     }
 
 }

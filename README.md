@@ -1,18 +1,20 @@
 <div align="center">
 
-## 🦄 Meta Mingle 메타밍글 : Backend
+# 🦄 Meta Mingle 메타밍글 : Backend
 
-<Br>
+<br>
 
 <img src="https://github.com/meta-mingles/.github/assets/88484476/6c623e90-4758-423b-b493-56f548f5b6d2" width="500"/>
 
-
-
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmeta-mingles%2Fmetamingle-server&count_bg=%23FFA49F&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false)](https://hits.seeyoufarm.com)
 
+`MINGLE : 돌아다니다, 섞이다, 어우러지다`
+
+ **메타 밍글은 숏폼, 인터랙티브 무비를 통한 문화 교류 커뮤니티 메타버스 플랫폼입니다.**
+
+### **언어로 소통하고, 문화로 연결하며, 창작으로 재미를 더하는 MetaMingle!**
+
 </div>
-
-
 
 <br>
 
@@ -27,54 +29,48 @@
     <td align="center"><a href="https://github.com/numerical43"><b>강수의</b></td>
   </tr>
     <tr>
-    <td align="center"><strong>회원, 아바타</strong></td>
-    <td align="center"><strong>숏폼, 인터렉티브 무비</strong></td>
+    <td align="center"><strong>회원, 아바타, 대본 스트리밍, AI 배경&BGM</strong></td>
+    <td align="center"><strong>숏폼(영상), 인터렉티브 무비(영상), 좋아요</strong></td>
   </tr>
 </table>
 
 <br>
 
 ## ⚒️ 기술 스택
-<img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"> <img src="https://img.shields.io/badge/amazonaws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/firebase-F5820D?style=for-the-badge&logo=firebase&logoColor=white">
+<img src="https://img.shields.io/badge/Java-5382a1?style=for-the-badge&logo=Java&logoColor=f89820"> <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"> 
+<br>
+<img src="https://img.shields.io/badge/firebase-1B3A57?style=for-the-badge&logo=firebase&logoColor=F5820D"> <img src="https://img.shields.io/badge/Redis-c93131?style=for-the-badge&logo=Redis&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-f29111?style=for-the-badge&logo=MySQL&logoColor=00758f"> <img src="https://img.shields.io/badge/MongoDB-001E2B?style=for-the-badge&logo=MongoDB&logoColor=00ED64">
+<br>
+<img src="https://img.shields.io/badge/Jenkins-181717?style=for-the-badge&logo=Jenkins&logoColor=white"> <img src="https://img.shields.io/badge/Docker-384d54?style=for-the-badge&logo=Docker&logoColor=0db7ed">
+
+<br>
+
+## 🧱 아키텍처
+![Server](https://github.com/meta-mingles/metamingle-server/assets/61495627/457e4e29-16ba-450f-9d78-80998e7bea35)
 
 <br>
 
 ## ✨ 협업 도구
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=black"/> <img src="https://img.shields.io/badge/Miro-F7DF1E?style=for-the-badge&logo=Miro&logoColor=black"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white"/>  <img src="https://img.shields.io/badge/Miro-F7DF1E?style=for-the-badge&logo=Miro&logoColor=black"/>
 
 <br>
-<br>
-<br>
-
-
 
 ## 📌 컨벤션
-
-<br>
-
-### 커뮤니케이션 컨벤션
-
-<br>
-
+### 1️⃣ 커뮤니케이션 컨벤션
 - 모여서 회의가 불가능할 경우 **Discord**를 통해 회의합니다.
-- 논의 사항은 **Git Discussion**에 정리합니다.
+- 논의 사항과 Trouble Shooting은 **Git Discussion**에 정리합니다.
 - 협업 툴 : **Github**, **Discord**
 
 <br>
 
-### 코드 컨벤션
-<br>
-
-#### 🎉 클래스 명칭
-
-
+### 2️⃣ 코드 컨벤션
+#### 📝 클래스 명칭
 ```
 🐤 [ 도메인 이름 ] + [ Command / Query ] + [ Domain / Infra ] + [ Controller / Service / Repository]
 ```
+#### 📝 메소드 명칭
 
-<br>
-
-#### 🎉 메소드 명칭
+메소드 명은 🐫(Camel Case)로 표기할 것!
 
 ```
 C : create + [ 명사 ]
@@ -86,29 +82,20 @@ U : update + [ 명사 ]
 D : delete + [ 명사 ]
 ```
 
-메소드 명은 🐫(Camel Case)로 표기할 것!
+#### 📝 API 응답
 
-<br>
-
-#### 🎉 API 응답
+응답의 형태는 Common 패키지에서 공용으로 사용되며 공통 양식을 유지할 것!
+> 출처 : https://wildeveloperetrain.tistory.com/m/240
 
 ![image](https://github.com/cca-ffodregamdi/running-hi-back/assets/115992753/4dd76c8d-dcc3-486d-830c-cda93a5ecb39)
 
-> 출처 : https://wildeveloperetrain.tistory.com/m/240
 
-
-응답의 형태는 Common 패키지에서 공용으로 사용되며 공통 양식을 유지할 것!
-
-<br>
-
-#### 🎉 DTO
-
-
+#### 📝 DTO
 DTO(Data Transfer Object)를 request와 response로 나누어 제작할 것!
 
 <br>
 
-## GitHub : PR & Commit  컨벤션
+### 3️⃣ GitHub : PR & Commit  컨벤션
 
 #### ✅ **Git Convention**
 | **Convention**  | **내용**                                                         |
@@ -124,29 +111,13 @@ DTO(Data Transfer Object)를 request와 response로 나누어 제작할 것!
 | **Deploy** | 배포 관련                                                   |
 | **Setting** | 개발환경 세팅                                                   |
 
-<br>
-<br>
-
----------------------------------------------------
-
 #### ✅ **Branch 명칭**
 ```
 🧸 [ Commit 이름 ] / [ 도메인 이름 ] / [ 구현 기능 ]
 ```
 
-#### ✅ **PR 제목**
-```
-🐘 [Label 이름(첫 글자 대문자)] - {작업 컨텍스트(대문자)} pr 내용
-ex) [Feature] - {USER} 엔티티 설계
-```
-
-
 #### ✅ **PR & Commit 규칙**
 
 - main branch에 바로 push 금지! develop branch로 Pull requests 하기.
 - git convention을 지키기.
-- PR 전에 이슈 발행 필수, PR 할 때 이슈 번호 입력 필수!
-- 이슈 하나는 본인이 하루 내에 해결할 수 있는 양으로 선정하기.
-- PR에 적극적으로 코드 리뷰 남기기 (LGTM 금지🙅).
-- Action이 통과해야만 Merge 가능.
-- Action 실패 시 원인 파악 및 테스트 성공 시까지 수정.
+- PR에 적극적으로 코드 리뷰 남기기.
