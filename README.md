@@ -37,6 +37,12 @@
 
 <br>
 
+## 시연 영상
+[![Video Label](https://github.com/meta-mingles/.github/assets/88484476/e7527860-f455-41a6-a82c-7cd4f2e8c83b)](https://youtu.be/TtD8kEjEgMs)
+
+
+<br>
+
 ## 👋 팀원 소개
 <table>
   <tr>
